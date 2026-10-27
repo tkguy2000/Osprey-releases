@@ -1,160 +1,180 @@
 # Osprey
 
-**[⬇ 최신 버전 받기](https://github.com/tkguy2000/Osprey-releases/releases/latest)** — `Osprey-Setup-x.y.z.exe` 를 받아 실행하세요.
+**English** | [한국어](README.ko.md)
+
+**[⬇ Download the latest version](https://github.com/tkguy2000/Osprey-releases/releases/latest)** — get `Osprey-Setup-x.y.z.exe` and run it.
 
 ---
 
 
-Osprey 는 사진·영상·압축 파일을 한 화면에서 보고, 별점·태그·메모로 정리하고, 빠르게 찾는 Windows 탐색기입니다.
-파일은 내 PC 에만 있고 어디에도 올라가지 않습니다.
+Osprey is a Windows file explorer for photos, videos and archives. You can view them in one window, organize them with ratings, tags and notes, and find them fast.
+Your files stay on your PC. Nothing is uploaded anywhere.
 
-## 1. 설치
+## 1. Install
 
-1. 최신 `Osprey-Setup-x.y.z.exe` 를 받아 실행합니다. 관리자 권한 없이 내 사용자 폴더에 설치되고, 시작 메뉴·바탕화면에 바로가기가 생깁니다.
-2. 처음 실행할 때 파란 **Windows SmartScreen** 경고가 나오면 **[추가 정보] → [실행]** 을 누릅니다(코드 서명이 없어서 나오는 경고입니다).
-3. 설치 없이 쓰려면 `OspreyExplorer-win-Portable.zip` 을 풀어 `Osprey.exe` 를 실행합니다.
+1. Download the latest `Osprey-Setup-x.y.z.exe` and run it. It installs into your user folder (no admin rights needed) and adds Start menu and desktop shortcuts.
+2. If a blue **Windows SmartScreen** warning appears the first time, click **More info → Run anyway**. The app isn't code-signed yet, which is why Windows warns.
+3. To use it without installing, unzip `OspreyExplorer-win-Portable.zip` and run `Osprey.exe`.
 
-- 필요: Windows 10/11 64비트.
-- 새 버전은 앱이 알려 줍니다. **⚙ → 업데이트…** 에서 [지금 확인] → [받고 다시 시작].
-- 창 제목에 지금 버전이 보입니다(예: `Osprey 0.1.27`).
+- Requires Windows 10/11, 64-bit.
+- On first launch you choose the language (English or Korean). You can change it later in **⚙ → Settings…**.
+- The window title shows the current version, e.g. `Osprey 0.1.27`.
 
-## 2. 처음 시작하기
+### Updates
+Osprey checks for a new version every time it starts (no account or token needed). When one is available it asks first. Click yes and it downloads, then restarts. It never installs silently.
+You can also check by hand: **⚙ → Updates… → Check now → Download and restart**.
 
-1. 목록 위 **[+ 폴더]** 를 눌러 자주 보는 폴더(사진·영상 폴더 등)를 라이브러리에 추가합니다. 여러 개 추가할 수 있습니다.
-2. 처음 한 번 **썸네일 저장 위치**를 묻습니다. 여유 있는 드라이브의 폴더를 고르세요(라이브러리 폴더 안은 고를 수 없습니다).
-3. 추가한 폴더는 바로 왼쪽 분류에 나타납니다. 큰 폴더라도 목록만 먼저 읽으므로 금방 쓸 수 있습니다.
+## 2. Getting started
 
-## 3. 화면 구성
+1. Click **+ Folder** above the list and add the folders you use most (photos, videos, projects…). You can add as many as you like.
+2. The first time, Osprey asks **where to keep thumbnails**. Pick a folder on a drive with free space. Folders inside your library aren't allowed.
+3. The folder shows up in the left pane right away. Even a huge folder is usable quickly, because Osprey reads the file list first and does the rest in the background.
 
-| 칸 | 하는 일 |
+## 3. The window
+
+| Pane | What it does |
 |---|---|
-| **미리보기** | 고른 사진·영상·압축 파일을 보여 줍니다. 위쪽 탭으로 웹 페이지(YouTube 등)도 엽니다. |
-| **분류** | 라이브러리 폴더와 별점·라벨·태그·최근 본 것 같은 분류. 누르면 목록이 바뀝니다. |
-| **목록** | 지금 폴더의 하위 폴더와 파일. 탐색기처럼 폴더를 두 번 눌러 들어가고, 맨 위 `..` 이나 Backspace 로 올라갑니다. |
-| **메모** | 오른쪽 가장자리 화살표를 누르면 열립니다. 메모를 붙인 파일 목록. |
+| **Preview** | Shows the selected photo, video or archive. Tabs along the top also open web pages (YouTube and others). |
+| **Browse** | Your library folders plus smart categories: ratings, labels, tags, recently viewed and more. Click one to show it in the list. |
+| **List** | The folders and files in the current location. Double-click a folder to go in. Use `..` at the top or Backspace to go up. |
+| **Notes** | Click the arrow on the right edge to open it. It lists every file you've attached a note to. |
 
-### 칸 나누기·옮기기
-- 칸의 제목 탭을 끌어 다른 칸의 위·아래·왼쪽·오른쪽에 놓으면 나뉘고, 가운데에 놓으면 탭으로 합쳐집니다.
-- 각 칸의 **⋯** 메뉴: 위·아래·왼쪽·오른쪽으로 나누기(같은 폴더 목록이 하나 더 생김), 크게 보기, 접기, 원래 크기, 닫기.
-- 배치가 엉키면 **⋯ → 패널 초기화** 또는 **⚙ → 설정 → 패널 초기화** 로 처음 모습으로 돌아갑니다.
-- 배치는 닫을 때 저장되고 다음에 켜면 그대로 나옵니다.
+### Rearranging panes
+- Drag a pane's title tab onto the top, bottom, left or right side of another pane to split it. Drop it in the middle to merge the two as tabs.
+- Each pane has a **⋯** menu with these items:
+  - Split up, down, left or right (opens a second list on the same folder).
+  - Maximize, Collapse, Restore sizes.
+  - Close.
+- If the layout gets messy, use **⋯ → Reset panels** or **⚙ → Settings… → Reset panels**.
+- Your layout is saved when you close Osprey and comes back the next time.
 
-## 4. 목록 다루기
+## 4. Working with the list
 
-### 주소줄과 검색
-- 목록 위 주소줄에 지금 위치가 보입니다. 다른 폴더 경로를 붙여 넣고 Enter 를 누르면 그 폴더로 갑니다.
-- **🔍**(또는 Ctrl+F)를 누르면 같은 자리가 검색창이 됩니다. 다시 누르거나 Esc 를 누르면 주소줄로 돌아옵니다.
-- **⟳** 는 지금 보는 폴더만 새로 읽습니다. 라이브러리 전체 다시 읽기는 **⚙ → 라이브러리 전체 다시 훑기** 에 있습니다.
-- 폴더에 들어가면 그 폴더의 바뀐 파일(새 파일·지운 파일)을 뒤에서 조용히 맞춥니다.
+### Address bar and search
+- The address bar above the list shows where you are. Paste a folder path and press Enter to go there.
+- Click **🔍** (or press Ctrl+F) to turn the same box into a search box. Click it again or press Esc to get the address back.
+- **⟳** refreshes only the current folder. To re-read the whole library, use **⚙ → Rescan the whole library (slow)**.
+- Opening a folder quietly syncs it in the background, picking up files that were added or deleted outside Osprey.
 
-### 보기 방식
-- **보기 ▾** 에서 고릅니다: 타일(큰 썸네일, 크기 조절), 넓게, 한 줄, **자세히**(이름·날짜·종류·크기만, 썸네일 없음).
-- 종류(전체·사진·영상·압축 …)와 정렬(이름·날짜·크기·별점 …), ↓(오름·내림)도 같은 줄에 있습니다.
-- 썸네일은 지금 보는 폴더 것부터 하나씩 채워집니다. 다른 폴더로 옮기면 새 폴더가 먼저입니다.
-- 썸네일을 만들 수 없는 파일: 글 파일(txt·md·log 등)은 앞부분 글이 보이고, 그 밖의 파일(.hip 등)은 탐색기와 같은 아이콘이 보입니다.
-- 영상 타일 아래 빨간 막대는 **어디까지 봤는지**, "✓ 봄" 은 끝까지 본 영상입니다.
-- 영상 썸네일 위에서 마우스를 좌우로 움직이면 장면을 훑어볼 수 있습니다.
+### Views
+- Choose a view from **View ▾**:
+  - **Tiles**: large thumbnails, with adjustable size.
+  - **Wide**.
+  - **Compact**: one line per file.
+  - **Details**: name, date, type and size only, without thumbnails.
+- The same row has the kind filter (all, photos, videos, archives…), the sort order (name, date, size, rating…) and ↓ to flip ascending or descending.
+- Thumbnails fill in one by one, starting with the folder you're looking at. Move to another folder and that folder goes first.
+- Some files can't have a thumbnail:
+  - Text files (txt, md, log, json…) show their first lines.
+  - Anything else (Houdini .hip files, for example) shows the same icon Windows Explorer does.
+- On video tiles, the red bar shows **how much you've watched**, and **✓ Watched** marks videos you finished.
+- Move the mouse left and right over a video thumbnail to skim through its scenes.
 
-### 정리하기
-| 하는 일 | 방법 |
+### Organizing
+| Action | How |
 |---|---|
-| 별점 0~5 | 숫자 키 0~5 |
-| 색 라벨 | Ctrl+1~6 (Ctrl+0 지우기) |
-| 태그 | T |
-| 메모(스티키 노트) | N 또는 오른쪽 클릭 → 메모. 메모가 있는 파일은 오른쪽 위에 노란 메모 표시 |
-| 이름 바꾸기 / 여러 개 한꺼번에 | F2 / Shift+F2 |
-| 휴지통으로 | Delete (앱 휴지통으로 옮김, **Ctrl+Z** 로 되돌리기) |
-| 복사·잘라내기·붙여넣기 | Ctrl+C / Ctrl+X / Ctrl+V (탐색기와 서로 주고받기 가능) |
-| 새 폴더 / 속성 | Ctrl+Shift+N / Alt+Enter |
-| 숨기기 | H — 숨김 보관함으로 옮겨 목록에서 안 보이게. 처음에 PIN 을 정하고, 볼 때 PIN 을 묻습니다 |
+| Rating 0–5 | Number keys 0–5 |
+| Color label | Ctrl+1–6 (Ctrl+0 clears) |
+| Tag | T |
+| Note (sticky note) | N, or right-click → Add/edit note. Files with notes show a yellow note in the top-right corner |
+| Rename / batch rename | F2 / Shift+F2 |
+| Delete | Del. This moves the file to Osprey's trash, and **Ctrl+Z** brings it back |
+| Copy / cut / paste | Ctrl+C / Ctrl+X / Ctrl+V. Works back and forth with Windows Explorer |
+| New folder / properties | Ctrl+Shift+N / Alt+Enter |
+| Hide | H. Moves the file into the **Hidden vault**, out of sight. You set a PIN the first time, and Osprey asks for it when you open the vault |
 
-- 메모 칸에서 메모를 누르면 그 파일이 있는 폴더로 가서 파일을 골라 줍니다.
-- 두 창(F9): 목록 두 개를 나란히 놓고 끌어 놓기로 옮기기(Ctrl 누르고 놓으면 복사).
+- Click a note in the Notes pane to jump to that file's folder with the file selected.
+- **Dual pane (F9)** shows two lists side by side. Drag files between them to move them, or hold Ctrl while dropping to copy.
 
-## 5. 찾기
+## 5. Finding files
 
-검색창(🔍)에 이름 일부를 치면 지금 폴더와 하위 폴더에서 찾습니다. 아래 조건을 섞어 쓸 수 있습니다.
+Type part of a name in the search box (🔍) to search the current folder and its subfolders. You can also combine these filters:
 
-| 예 | 뜻 |
+| Example | Meaning |
 |---|---|
-| `*.jpg` `ext:mp4;mov` | 확장자 |
-| `size:>100mb` | 크기 |
-| `dm:today` `dm:2026-10` | 수정한 날짜 |
-| `path:여행` | 경로에 들어간 글자 |
-| `rating:>=4` | 별점 4 이상 |
-| `tag:가족` `label:red` | 태그·라벨 |
-| `played:` | 본 적 있는 영상 |
-| `dupe:` | 같은 파일(중복) |
-| `regex:^IMG_\d+` | 정규식 |
+| `*.jpg` `ext:mp4;mov` | File extension |
+| `size:>100mb` | Size |
+| `dm:today` `dm:2026-10` | Date modified |
+| `path:trip` | Text in the folder path |
+| `rating:>=4` | Rated 4 or higher |
+| `tag:family` `label:red` | Tag or color label |
+| `played:` | Videos you've played |
+| `dupe:` | Duplicate files |
+| `regex:^IMG_\d+` | Regular expression |
 
-- 자주 쓰는 검색은 저장해 두고 다시 쓸 수 있습니다.
-- **PC** 버튼: PC 전체에서 찾기([Everything](https://www.voidtools.com/) 이 실행 중일 때).
-- **⚙ → 비슷한 이미지 찾기**: 비슷한 사진·영상끼리 묶어 보여 주고 정리를 돕습니다.
+- You can save searches you use often and run them again later.
+- The **PC** button searches your whole PC. This needs [Everything](https://www.voidtools.com/) to be running.
+- **⚙ → Find similar images…** groups look-alike photos and videos so you can clean them up.
 
-## 6. 사진 보기
+## 6. Photos
 
-- 목록에서 사진을 고르면 미리보기 칸에 크게 보입니다. **Space** 는 빠른 미리보기 창.
-- 마우스 휠: 이전·다음 사진, Ctrl+휠: 확대·축소. 확대 중에는 끌어서 이동.
-- **F5** 슬라이드쇼, **F11** 전체 화면(Esc 로 끝).
+- Select a photo to see it large in the Preview pane. Press **Space** for a Quick look window.
+- Mouse wheel goes to the previous or next photo, and Ctrl + wheel zooms. While zoomed in, drag to pan.
+- **F5** starts a slideshow and **F11** goes full screen. Press Esc to exit either.
 
-## 7. 영상 보기
+## 7. Videos
 
-영상을 두 번 누르거나 Enter 를 누르면 미리보기 칸에서 재생합니다. 지난번에 보던 곳부터 이어서 재생합니다.
+Double-click a video or press Enter to play it in the Preview pane. It picks up where you left off.
 
-| 조작 | 버튼 / 키 |
+| Control | Button / key |
 |---|---|
-| 재생·일시정지 (끝나면 ↻ 처음부터) | ▶ ⏸ ↻ / Space, 영상 클릭 |
-| 10초 뒤로·앞으로 / 1초 / 한 프레임 | −10s +10s / ← → / Shift+← → / , . |
-| 이전·다음 영상(목록 순서) | ⏮ ⏭ / Ctrl+← → |
-| 속도 | 속도 버튼에서 고르기 / [ ] (\ 보통) |
-| 반복: 끔 → 이 영상 → 끝나면 다음 영상 | 🔁 / L |
-| 음량 / 음소거 | 슬라이더·휠·↑↓ / 🔊 · M |
-| 전체 화면 | ⛶ / F / 영상 두 번 클릭, Esc 로 끝 |
-| 장면 저장(북마크) / 이전·다음 장면 | ♥ / B / PgUp PgDn |
-| 자막·음성 트랙, 자막 싱크, 화면 비율 | ⋯ 메뉴 |
+| Play / pause (↻ replays after the end) | ▶ ⏸ ↻ / Space, or click the video |
+| Back or forward 10 s / 1 s / one frame | −10s +10s / ← → / Shift+← → / , . |
+| Previous / next video (list order) | ⏮ ⏭ / Ctrl+← → |
+| Speed | Speed button menu / [ ] (\ resets to normal) |
+| Repeat: off → this video → play next when done | 🔁 / L |
+| Volume / mute | Slider, mouse wheel, ↑ ↓ / 🔊 or M |
+| Full screen | ⛶ / F / double-click the video. Esc exits |
+| Save scene (bookmark) / previous or next scene | ♥ / B / PgUp PgDn |
+| Subtitle and audio tracks, subtitle sync, aspect ratio | ⋯ menu |
 
-- 영상 위를 좌우로 끌면 원하는 위치로 빠르게 옮겨 갑니다.
-- 저장한 장면은 끝 지점을 정해 구간 반복을 할 수 있습니다.
+- Drag left or right across the video to scrub to a new position.
+- You can give a saved scene an end point and loop that section.
 
-## 8. 압축 파일
+## 8. Archives
 
-- zip·rar·7z 를 열면 안의 파일 목록과 사진을 보여 줍니다(풀지 않고). 풀기도 됩니다.
-- 사진이 든 압축은 **만화로 보기**: ←→·Space·클릭으로 넘기기, D 두 쪽 보기, R 읽는 방향 바꾸기.
+- Open a zip, rar or 7z file to see the files and photos inside without extracting it. You can extract it too.
+- For an archive full of images, use **Read as comic**:
+  - Turn pages with ← →, Space or a click.
+  - D shows two pages at a time.
+  - R flips the reading direction.
 
-## 9. 웹 탭 (YouTube 등)
+## 9. Web tabs (YouTube and more)
 
-- 미리보기 칸 위쪽 **+** 로 새 웹 탭을 열고, 주소나 검색어를 넣습니다. **YouTube** 버튼은 YouTube 탭을 엽니다.
-- 탭을 **그룹**(예: 회사·개인)으로 나눌 수 있습니다. 그룹을 누르면 그 그룹의 탭만 보입니다.
-  탭 오른쪽 클릭 → 그룹으로 옮기기 / 새 그룹, 그룹 오른쪽 클릭 → 이름·색 바꾸기·삭제.
-- 열어 둔 탭과 그룹은 다음에 켤 때 그대로 나옵니다. YouTube 영상도 보던 곳부터 이어서 봅니다.
+- Click **+** at the top of the Preview pane to open a web tab, then type an address or a search. The **YouTube** button opens a YouTube tab.
+- You can sort tabs into **groups** (for example Work and Personal). Click a group to see only its tabs.
+  - Right-click a tab to move it to a group or to a new group.
+  - Right-click a group to rename it, change its color or delete it.
+- Open tabs and groups come back next time, and YouTube videos resume where you stopped.
 
-## 10. 설정과 관리 (⚙ 메뉴)
+## 10. Settings and tools (⚙ menu)
 
-- **설정…**: 언어, 테마, 썸네일 저장 위치·크기·비우기, 패널 초기화.
-- **단축키…**: 모든 단축키를 바꿀 수 있습니다(겹치면 알려 줌).
-- **업데이트…**: 새 버전 확인·받기. 켤 때 자동으로 확인하게 할 수 있습니다.
-- **폴더 용량 보기…**: 어떤 폴더가 공간을 많이 쓰는지 한눈에.
-- **라이브러리에서 폴더 빼기**: 분류의 폴더를 오른쪽 클릭 → 라이브러리에서 제거.
-  별점·태그·메모 기록과 썸네일만 지워지고 **실제 파일은 그대로** 입니다. 숨긴 파일이 남아 있으면 먼저 숨김을 풀어야 합니다.
+- **Settings…**: language, theme, thumbnail location, thumbnail size, clearing thumbnails, and reset panels.
+- **Shortcuts…**: change any keyboard shortcut. Osprey warns you about conflicts.
+- **Updates…**: check for and install a new version. You can turn the startup check on or off here.
+- **Folder sizes…**: see at a glance which folders take up the most space.
+- **Removing a folder from the library**: right-click it in the Browse pane and choose remove.
+  - This clears only Osprey's records for that folder (ratings, tags, notes) and its thumbnails. **Your actual files are not touched.**
+  - If the folder still has hidden files, unhide them first.
 
-## 11. 안심하고 쓰기
+## 11. Safety
 
-- 앱에서 지운 파일은 바로 지워지지 않고 그 폴더의 `.osprey\trash` 로 옮겨집니다. **Ctrl+Z** 로 되돌릴 수 있습니다.
-  "휴지통 비우기" 도 Windows 휴지통으로 보낼 뿐입니다.
-- 앱은 라이브러리에 추가한 폴더 밖에는 아무것도 쓰지 않습니다(썸네일은 처음에 고른 저장 위치에만).
-- 앱을 제거해도 별점·태그·메모 기록은 남아 있어서, 다시 설치하면 이어서 씁니다.
-  숨긴 파일이 있으면 제거하기 전에 앱에서 숨김을 풀어 두세요.
+- Files you delete in Osprey aren't erased. They move into that folder's `.osprey\trash`, and **Ctrl+Z** undoes the delete.
+  "Empty trash" sends them to the Windows Recycle Bin, so you can still restore them from there.
+- Osprey never writes outside the folders you added to the library, except thumbnails, which go only in the location you chose.
+- Uninstalling keeps your ratings, tags and notes, so if you reinstall you pick up where you left off.
+  If you have hidden files, unhide them in Osprey before uninstalling.
 
-| 내용 | 위치 |
+| What | Where |
 |---|---|
-| 프로그램 | `%LocalAppData%\OspreyExplorer` |
-| 별점·태그·메모 기록 | `%LocalAppData%\Osprey` |
-| 설정 | `%AppData%\Osprey\settings.json` |
-| 썸네일 | 처음에 고른 폴더의 `OspreyCache` |
+| Program | `%LocalAppData%\OspreyExplorer` |
+| Ratings, tags, notes | `%LocalAppData%\Osprey` |
+| Settings | `%AppData%\Osprey\settings.json` |
+| Thumbnails | `OspreyCache` inside the folder you chose |
 
-## 12. 시험해 보시는 분께
+## 12. For testers
 
-문제가 생기면 다음을 알려 주세요.
-- 창 제목의 버전(예: `Osprey 0.1.27`)
-- 무엇을 하다가 어떻게 됐는지(가능하면 화면 캡처, 개인 파일 이름은 가려 주세요)
-- 앱이 갑자기 꺼지거나 멈췄다면 `%LocalAppData%\Osprey\logs` 안의 `crash-날짜.log`·`hang-날짜.log`
+If something goes wrong, please send:
+- The version from the window title (e.g. `Osprey 0.1.27`).
+- What you were doing and what happened. A screenshot helps, but please blur any private file names.
+- If Osprey crashed or froze, the `crash-<date>.log` or `hang-<date>.log` file from `%LocalAppData%\Osprey\logs`.
