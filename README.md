@@ -17,7 +17,7 @@ Your files stay on your PC. Nothing is uploaded anywhere.
 3. To use it without installing, unzip `OspreyExplorer-win-Portable.zip` and run `Osprey.exe`.
 
 - Requires Windows 10/11, 64-bit.
-- On first launch you choose the language (English or Korean). You can change it later in **⚙ → Settings…**.
+- Osprey starts in English. On first launch you can click **한국어** to switch to Korean, then **Get started**. You can change it later in **⚙ → Settings…**.
 - The window title shows the current version, e.g. `Osprey 0.1.27`.
 
 ### Updates
@@ -45,6 +45,7 @@ You can also check by hand: **⚙ → Updates… → Check now → Download and 
   - Split up, down, left or right (opens a second list on the same folder).
   - Maximize, Collapse, Restore sizes.
   - Close.
+- Each divider between panes has small arrows (◀ ▶ for side-by-side panes, ▲ ▼ for stacked ones). Click one to push the divider all the way to that side; click the opposite arrow to put it back.
 - If the layout gets messy, use **⋯ → Reset panels** or **⚙ → Settings… → Reset panels**.
 - Your layout is saved when you close Osprey and comes back the next time.
 
@@ -152,6 +153,7 @@ Double-click a video or press Enter to play it in the Preview pane. It picks up 
 - **Settings…**: language, theme, thumbnail location, thumbnail size, clearing thumbnails, and reset panels.
 - **Shortcuts…**: change any keyboard shortcut. Osprey warns you about conflicts.
 - **Updates…**: check for and install a new version. You can turn the startup check on or off here.
+- **Report a problem…**: send a problem report to the developer (see below).
 - **Folder sizes…**: see at a glance which folders take up the most space.
 - **Removing a folder from the library**: right-click it in the Browse pane and choose remove.
   - This clears only Osprey's records for that folder (ratings, tags, notes) and its thumbnails. **Your actual files are not touched.**
@@ -172,9 +174,16 @@ Double-click a video or press Enter to play it in the Preview pane. It picks up 
 | Settings | `%AppData%\Osprey\settings.json` |
 | Thumbnails | `OspreyCache` inside the folder you chose |
 
-## 12. For testers
+## 12. Reporting problems
 
-If something goes wrong, please send:
+If Osprey crashes, freezes or hits an error, the next time you start it asks whether to send a report. You can also send one any time from **⚙ → Report a problem…**.
+- No account needed. Just describe what you were doing and click **Send**.
+- You see exactly what will be sent before you send it: your note, the app and Windows versions, and the error log. File paths, file names, web addresses, emails, your user name and your PC name are removed, and no file contents are sent. Please glance over the text before sending.
+- Nothing is sent unless you click **Send**.
+
+## 13. For testers
+
+If you prefer to report by hand, please send:
 - The version from the window title (e.g. `Osprey 0.1.27`).
 - What you were doing and what happened. A screenshot helps, but please blur any private file names.
 - If Osprey crashed or froze, the `crash-<date>.log` or `hang-<date>.log` file from `%LocalAppData%\Osprey\logs`.
