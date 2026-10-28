@@ -55,7 +55,7 @@ You can also check by hand: **⚙ → Updates… → Check now → Download and 
 - The address bar above the list shows where you are. Paste a folder path and press Enter to go there.
 - Click **🔍** (or press Ctrl+F) to turn the same box into a search box. Click it again or press Esc to get the address back.
 - **⟳** refreshes only the current folder. To re-read the whole library, use **⚙ → Rescan the whole library (slow)**.
-- Opening a folder quietly syncs it in the background, picking up files that were added or deleted outside Osprey.
+- The folder you're looking at updates by itself within a few seconds when folders or files are created, deleted or renamed — for example, new render output. On some network drives notifications can be missed; press ⟳ then.
 
 ### Views
 - Choose a view from **View ▾**:
